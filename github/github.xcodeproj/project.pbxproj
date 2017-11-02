@@ -15,6 +15,7 @@
 		18F2D9511FAB0CA300752410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F2D9501FAB0CA300752410 /* main.m */; };
 		18F2D95B1FAB0CA300752410 /* githubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F2D95A1FAB0CA300752410 /* githubTests.m */; };
 		18F2D9661FAB0CA300752410 /* githubUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F2D9651FAB0CA300752410 /* githubUITests.m */; };
+		18F2D9781FAB0E9B00752410 /* JRClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F2D9771FAB0E9B00752410 /* JRClearCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		18F2D9611FAB0CA300752410 /* githubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F2D9651FAB0CA300752410 /* githubUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = githubUITests.m; sourceTree = "<group>"; };
 		18F2D9671FAB0CA300752410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F2D9741FAB0E8000752410 /* CrossDevicesLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossDevicesLayout.h; sourceTree = "<group>"; };
+		18F2D9761FAB0E9B00752410 /* CrossDevicesLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossDevicesLayout.h; sourceTree = "<group>"; };
+		18F2D9771FAB0E9B00752410 /* JRClearCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRClearCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		18F2D9401FAB0CA300752410 /* github */ = {
 			isa = PBXGroup;
 			children = (
+				18F2D9751FAB0E8700752410 /* 清除缓存 */,
+				18F2D9731FAB0E5D00752410 /* 适配iphone4-8 */,
 				18F2D9411FAB0CA300752410 /* AppDelegate.h */,
 				18F2D9421FAB0CA300752410 /* AppDelegate.m */,
 				18F2D9441FAB0CA300752410 /* ViewController.h */,
@@ -130,6 +136,23 @@
 				18F2D9671FAB0CA300752410 /* Info.plist */,
 			);
 			path = githubUITests;
+			sourceTree = "<group>";
+		};
+		18F2D9731FAB0E5D00752410 /* 适配iphone4-8 */ = {
+			isa = PBXGroup;
+			children = (
+				18F2D9741FAB0E8000752410 /* CrossDevicesLayout.h */,
+			);
+			path = "适配iphone4-8";
+			sourceTree = "<group>";
+		};
+		18F2D9751FAB0E8700752410 /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				18F2D9761FAB0E9B00752410 /* CrossDevicesLayout.h */,
+				18F2D9771FAB0E9B00752410 /* JRClearCache.m */,
+			);
+			path = "清除缓存";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F2D9781FAB0E9B00752410 /* JRClearCache.m in Sources */,
 				18F2D9461FAB0CA300752410 /* ViewController.m in Sources */,
 				18F2D9511FAB0CA300752410 /* main.m in Sources */,
 				18F2D9431FAB0CA300752410 /* AppDelegate.m in Sources */,
